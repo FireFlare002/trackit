@@ -15,7 +15,7 @@
 require('dotenv').config({ silent: true });
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect=('mongodb://heroku_s3fx16qh:u7u7pcp7ikqi907r0l02f87h98@ds151752.mlab.com:51752/heroku_s3fx16qh');
 
 var Goals = require('./models/goalsSchema');
 
