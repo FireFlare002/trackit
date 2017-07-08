@@ -15,7 +15,7 @@
 require('dotenv').config({ silent: true });
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.platypus_tracker_db_conn);
+mongoose.connect(process.env.MONGODB_URI);
 
 var Goals = require('./models/goalsSchema');
 
