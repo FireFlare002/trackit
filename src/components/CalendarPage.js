@@ -152,7 +152,7 @@ class CalendarPage extends Component {
     var self = this;
     console.log('inside getCalendarInfo');
 
-      axios.post('http://https://powerful-brushlands-61944.herokuapp.com/calendar/alldateinfo')
+      axios.post('../calendar/alldateinfo')
         .then((response)=>{
             var arryAll = [];
             var tempObj = {};
@@ -172,7 +172,7 @@ class CalendarPage extends Component {
   getCalendarInfo(){
     var self = this;
     console.log('inside getCalendarInfo');
-      axios.post('http://localhost:5000/calendar/alldateinfo')
+      axios.post('../calendar/alldateinfo')
         .then((response)=>{
             var arryAll = [];
             var tempObj = {};
