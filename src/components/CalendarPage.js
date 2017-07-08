@@ -31,11 +31,11 @@ const styles = {
   },
   textInput: {
     marginRight: '10px',
-    color: "#F3C677",
+    color: "black",
     // #F3C677
   },
   textInputInput: {
-    color: "#F3C677",
+    color: "#ffffff",
     // #F3C677
   },
   textInput2:{
@@ -197,7 +197,7 @@ class CalendarPage extends Component {
     var self = this;
     self.setState({openAddData: false})
 
-    axios.post('http://localhost:5000/calendar/addgoal', {
+    axios.post('../calendar/addgoal', {
       name: this.state.name,
       actionType: this.state.actionType,
       notes: this.state.notes,
@@ -255,7 +255,7 @@ class CalendarPage extends Component {
 
     var self = this;
 
-    axios.post('http://localhost:5000/calendar/specificdateinfo',{
+    axios.post('../calendar/specificdateinfo',{
       datequery: dateDue
     })
       .then((response)=>{
@@ -290,7 +290,7 @@ class CalendarPage extends Component {
         console.log('this.state.selectedDay ', self.state.selectedDay);
 
         if (this.state.selectedDay!=undefined){
-          axios.post('http://localhost:5000/calendar/specificdateinfo',{
+          axios.post('../calendar/specificdateinfo',{
             datequery: self.state.selectedDay.toLocaleDateString()
           })
             .then((response)=>{

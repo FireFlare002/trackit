@@ -73,7 +73,7 @@
   /*clear: left;*/
 }
 
-.loadingPlatypus{
+.loading{
   height: 100px;
   width: auto;
   border-radius: 10px;
@@ -211,7 +211,7 @@ nav {
   /*padding-bottom: 0px;*/
 }
 
-.platypusIcon{
+.AIcon{
   max-height: 100px;
   width: auto;
   float: left;
@@ -222,7 +222,7 @@ nav {
 
 
 
-.platypusHeader{
+.AHeader{
   display:inline-block;
   width: auto;
   float: left;

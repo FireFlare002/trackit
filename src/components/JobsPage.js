@@ -94,7 +94,7 @@ class JobsPage extends Component {
     // console.log('inside getCalendarInfo');
     //jobTitle jobLink companyName jobLocation jobDescription
     //http://orig07.deviantart.net/e9e4/f/2015/145/5/b/5bfba23d515a76f42c3751d4b60dde64-d8uovty.gif
-      axios.post('http://localhost:5000/jobs/alljobinfo')
+      axios.post('../jobs/alljobinfo')
         .then((response)=>{
             var arryAll = [];
             var tempObj = {};
@@ -119,7 +119,7 @@ class JobsPage extends Component {
 
   getJobsInfo(){
     var self = this;
-      axios.post('http://localhost:5000/jobs/alljobinfo')
+      axios.post('../jobs/alljobinfo')
         .then((response)=>{
             var arryAll = [];
             var tempObj = {};
@@ -149,7 +149,7 @@ class JobsPage extends Component {
     self.setState({
       loading:true
     })
-    axios.post('http://localhost:5000/jobs/search',{
+    axios.post('../jobs/search',{
       searchTerm: this.state.searchTerm,
       searchCity: this.state.searchCity
     })
@@ -292,7 +292,7 @@ class JobsPage extends Component {
                {renderIf(this.state.loading === true)(
                  <Paper style={styles.loadingContainer} zDepth={2}>
                    <p className="loadingText">Loading!</p>
-                   <img className="loadingPlatypus" src='http://orig07.deviantart.net/e9e4/f/2015/145/5/b/5bfba23d515a76f42c3751d4b60dde64-d8uovty.gif'/>
+                   <img className="loading" src='https://media.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif'/>
                  </Paper>
                )}
 
@@ -300,7 +300,7 @@ class JobsPage extends Component {
                {renderIf(this.state.haveSearched === false)(
                  <Paper style={styles.paper} zDepth={2}>
                    <div>
-                     <strong>Search to display job listings from Indeed and Built-In-Austin</strong>
+                     <strong>Search to display job listings from Indeed</strong>
                    </div>
                  </Paper>
                )}
@@ -334,7 +334,7 @@ class JobsPage extends Component {
 
                 {renderIf(this.state.haveSearched === true)(
                   <Paper style={styles.paper} zDepth={2}>
-                    <h3>Listings from Built-In-Austin</h3>
+                    <h3>Job Listings</h3>
                   {renderIf(this.state.showSearchBuilt === false)(
                     <Button
                       label={'show'}
@@ -359,7 +359,7 @@ class JobsPage extends Component {
 
 
               <Paper style={styles.paper} zDepth={2}>
-                <h3>Platypus Saved Job Listings</h3>
+                <h3>Saved Job Listings</h3>
                 {renderIf(this.state.showSaved === false)(
                   <Button
                     label={'show'}

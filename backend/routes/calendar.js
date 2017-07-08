@@ -5,7 +5,7 @@ var Goals = require('../models/goalsSchema');
 /* GET home page. */
 
 
-router.post('/alldateinfo', function(req,res,next){
+router.post('../alldateinfo', function(req,res,next){
   Goals.find({}, function(err,posts){
     res.json(posts);
   });

@@ -293,8 +293,8 @@ class App extends Component {
 
           <div className="headerContainer">
 
-            <img className="platypusIcon" src='http://piq.codeus.net/static/media/userpics/piq_222946_400x400.png'/>
-            <h1 className="platypusHeader">platypusTracker</h1>
+            <img className="AIcon" src='http://joshpimentel.com/wp-content/uploads/2013/04/ALL-IN-ONE-logo2-1660x582.jpg'/>
+            <h1 className="AHeader">AiO Tracker</h1>
 
           </div>
 
