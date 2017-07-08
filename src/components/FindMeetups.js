@@ -74,7 +74,7 @@ class FindMeetups extends Component {
     var self = this;
 
 
-    axios.post('../meetups/search',{
+    axios.post('.../../../meetups/search',{
       searchTerm: this.state.searchTerm
     })
     .then((response)=>{

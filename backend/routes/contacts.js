@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var Goals = require('../models/goalsSchema');
-var Jobs = require('../models/jobsSchema');
-var Contacts = require('../models/contactsSchema');
+var Goals = require('../../../models/goalsSchema');
+var Jobs = require('../../../models/jobsSchema');
+var Contacts = require('../../../models/contactsSchema');
 var request = require('request');
 var cheerio = require('cheerio');
 

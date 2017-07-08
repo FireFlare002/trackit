@@ -66,7 +66,7 @@ class ListJob extends Component {
   saveJob(e){
     e.preventDefault();
 
-    axios.post('../jobs/addjob',{
+    axios.post('.../../../jobs/addjob',{
       jobTitle: this.props.job.jobTitle,
       jobLink: this.props.job.jobLink,
       companyName: this.props.job.companyName,

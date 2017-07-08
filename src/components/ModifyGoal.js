@@ -144,7 +144,7 @@ class ModifyGoal extends Component {
 
     var self = this;
 
-    axios.patch('../calendar/modifygoal', {
+    axios.patch('../../../calendar/modifygoal', {
       id: this.state.goal._id,
       name: this.state.name,
       notes: this.state.notes,

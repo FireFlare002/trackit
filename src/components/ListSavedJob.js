@@ -61,7 +61,7 @@ class ListSavedJob extends Component {
     deleteSavedJob(e){
       e.preventDefault();
       var self = this;
-      var url = '../jobs/deleteItem/' + this.props.savedjob._id
+      var url = '../../../jobs/deleteItem/' + this.props.savedjob._id
 
       axios.delete(url)
         .then((response)=>{

@@ -26,7 +26,7 @@ class AddData extends Component {
 
     var self = this;
 
-    axios.post('../calendar/addgoal', {
+    axios.post('../../../calendar/addgoal', {
       name: this.state.name,
       actionType: this.state.actionType,
       notes: this.state.notes,

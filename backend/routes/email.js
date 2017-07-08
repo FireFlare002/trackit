@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Templates = require('../models/templatesSchema');
+var Templates = require('../../../models/templatesSchema');
 var schedule = require('node-schedule');
 var moment = require('moment-timezone');
 const fs = require('fs');

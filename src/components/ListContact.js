@@ -80,7 +80,7 @@ class ListContact extends Component {
   deleteContact(e){
     e.preventDefault();
     var self = this;
-    var url = '../contacts/deleteContact/' + this.props.contact._id
+    var url = '.../../../contacts/deleteContact/' + this.props.contact._id
 
     axios.delete(url)
       .then((response)=>{
