@@ -1,0 +1,246 @@
+.App {
+  text-align: center;
+  background-color: #7B1E7A;
+}
+
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+
+.calendarContainer{
+  display: inline-block;
+  background-color: tomato;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.calendarDetail{
+  display: inline-block;
+  width: 100%;
+  background-color: #F3C677;
+  margin: 0 auto;
+}
+
+.container{
+  text-align: center;
+  background-color: #7B1E7A;
+}
+
+.contactItem{
+  /*display: inline-block;*/
+  background-color: #F3C677;
+  border-color: #7B1E7A;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: medium;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.contactsContainer{
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  background-color: #F3C677;
+  width: 80%;
+}
+
+.searchTermForm{
+  /*max-width: 80%;
+  display: inline-block;
+  float: left;
+  clear: left;*/
+}
+
+.searchTermContainer{
+  float: left;
+  display: inline-block;
+  /*clear: left;*/
+}
+
+.loadingPlatypus{
+  height: 100px;
+  width: auto;
+  border-radius: 10px;
+  border-width: medium;
+  border-style: solid;
+  border-color: #7B1E7A;
+}
+
+.loadingText{
+  margin-top: 5px;
+}
+
+.loadingContainer{
+  background-color: #F3C677;
+  font-weight: bold;
+  width:20%;
+  height: auto;
+  color:  #7B1E7A;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.contactsPageContainer{
+  text-align: center;
+}
+
+.tabs li{
+  display: inline;
+  padding-left: 5%;
+  color: white;
+}
+
+.tabs{
+  margin-top: 0px;
+  background-color: #F3C677;
+}
+
+.checkbox{
+  display: inline;
+  float: left;
+}
+
+.calendar{
+  display: inline-block;
+  background: white;
+  width: 50%;
+  outline-width: 0px;
+}
+
+form{
+  display: inline-block;
+  text-align: center;
+}
+
+input, textarea{
+    display: block;
+    font-size:11px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width:100%;
+    /*margin:1px 0 20px 10px;*/
+    margin-bottom: 2%;
+}
+
+nav {
+  list-style: none;
+}
+
+
+.templateMakerForm{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.toggleTemplate{
+  margin: 10px 0;
+}
+
+.templateMakerDiv{
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.jobsList{
+  background-color: #F3C677;
+  border-radius: 5px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.jobListing{
+  font-size: 10px;
+  margin-bottom: 3px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #7B1E7A;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.GoalsDue{
+  display: inline-block;
+  background-color: #F3C677;
+  text-align: center;
+  margin: 10px;
+}
+
+.dropZone{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.dropZoneinner{
+  display: inline-block;
+  background-color: '#F2A521',
+}
+
+.headerContainer{
+  border-style: solid;
+  border-color: red;
+  border-width: 3px;
+  display: inline-block;
+  background-color: orange;
+  border-radius: 13px;
+  text-align: center;
+  width: auto;
+  /*padding-bottom: 0px;*/
+}
+
+.platypusIcon{
+  max-height: 100px;
+  width: auto;
+  float: left;
+  border-radius: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+
+.platypusHeader{
+  display:inline-block;
+  width: auto;
+  float: left;
+  background: tomato;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  /*adding margin pushes to new line. why?*/
+  /*margin-left: 0.5%;
+  margin-right: 0.5%;*/
+}
+
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
